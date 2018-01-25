@@ -1,0 +1,29 @@
+/*
+Theme Name: 
+Theme URI: 
+Author: Razib Ahmed
+Author URI: https://
+Version: 1.0
+Description: This is the standard html template
+License: 
+License URI: 
+Text Domain: twentyseventeen
+Tags: business template, company website
+Type: Company,Business,Personal
+*/
+/*reset css*/
+body{
+	font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Dosis', sans-serif;
+}
+p{
+	font-size: 14px;
+}
+/*====all-variables here ========*/
+:root {
+    --white: #ffffff;
+    --black: #000000;
+}
+/*== all-background image or video here ===*/

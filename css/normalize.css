@@ -1,0 +1,879 @@
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+*,
+*::before,
+*::after {
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+p{
+  margin-bottom: 0;
+}
+/**
+ * Add the correct display in IE 9-.
+ */
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+
+figcaption,
+figure,
+main { /* 1 */
+  display: block;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  overflow: visible; /* 2 */
+  display: block;
+  height: 1px;
+  border-top: 1px solid #ccc;
+  margin: 5px 0;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+
+details, /* 1 */
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10-.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/*====custom reset css here*/
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+/*===for display====*/
+.df{display: flex;align-items: center;}
+/*===for padding*/
+.no-padding{padding: 0;}
+.pad-1{padding: 1px;}
+.pad-2{padding: 2px;}
+.pad-3{padding: 3px;}
+.pad-4{padding: 4px;}
+.pad-5{padding: 5px;}
+.pad-6{padding: 6px;}
+.pad-7{padding: 7px;}
+.pad-8{padding: 8px;}
+.pad-9{padding: 9px;}
+.pad-10{padding: 10px;}
+.pad-11{padding: 11px;}
+.pad-12{padding: 12px;}
+.pad-13{padding: 13px;}
+.pad-14{padding: 14px;}
+.pad-15{padding: 15px;}
+.pad-16{padding: 16px;}
+.pad-17{padding: 17px;}
+.pad-18{padding: 18px;}
+.pad-19{padding: 19px;}
+.pad-20{padding: 20px;}
+/*=====for link======*/
+a:hover{text-decoration: none;}
+/*======for text====*/
+.t-c{text-align: center;}
+.t-r{text-align: right;}
+.t-l{text-align: left;}
+/*=====for ul=====*/
+ul{list-style: none;}
+/*====font-weight======*/
+.fw-3{font-weight: 300;}
+.fw-4{font-weight: 400;}
+.fw-5{font-weight: 500;}
+.fw-6{font-weight: 600;}
+.fw-7{font-weight: 700;}
+.fw-8{font-weight: 800;}
+.fw-9{font-weight: 900;}
+/*font size*/
+.fs-5{font-size: 5px;}
+.fs-6{font-size: 6px;}
+.fs-7{font-size: 7px;}
+.fs-8{font-size: 8px;}
+.fs-9{font-size: 9px;}
+.fs-10{font-size: 10px;}
+.fs-11{font-size: 11px;}
+.fs-12{font-size: 12px;}
+.fs-13{font-size: 13px;}
+.fs-14{font-size: 14px;}
+.fs-15{font-size: 15px;}
+.fs-16{font-size: 16px;}
+.fs-17{font-size: 17px;}
+.fs-18{font-size: 18px;}
+.fs-19{font-size: 19px;}
+.fs-20{font-size: 20px;}
+.fs-21{font-size: 21px;}
+.fs-22{font-size: 22px;}
+.fs-23{font-size: 23px;}
+.fs-24{font-size: 24px;}
+.fs-25{font-size: 25px;}
+.fs-26{font-size: 26px;}
+.fs-27{font-size: 27px;}
+.fs-28{font-size: 28px;}
+.fs-29{font-size: 29px;}
+.fs-30{font-size: 30px;}
+.fs-31{font-size: 31px;}
+.fs-32{font-size: 32px;}
+.fs-33{font-size: 33px;}
+.fs-34{font-size: 34px;}
+.fs-35{font-size: 35px;}
+.fs-36{font-size: 36px;}
+.fs-37{font-size: 37px;}
+.fs-38{font-size: 38px;}
+.fs-39{font-size: 39px;}
+.fs-40{font-size: 40px;}
+.fs-41{font-size: 41px;}
+.fs-42{font-size: 42px;}
+.fs-43{font-size: 43px;}
+.fs-44{font-size: 44px;}
+.fs-45{font-size: 45px;}
+.fs-46{font-size: 46px;}
+.fs-47{font-size: 47px;}
+.fs-48{font-size: 48px;}
+.fs-49{font-size: 49px;}
+.fs-50{font-size: 50px;}
+.fs-51{font-size: 51px;}
+.fs-52{font-size: 52px;}
+.fs-53{font-size: 53px;}
+.fs-54{font-size: 54px;}
+.fs-55{font-size: 55px;}
+.fs-56{font-size: 56px;}
+.fs-57{font-size: 57px;}
+.fs-58{font-size: 58px;}
+.fs-59{font-size: 59px;}
+.fs-60{font-size: 60px;}
+.fs-61{font-size: 61px;}
+.fs-62{font-size: 62px;}
+.fs-63{font-size: 63px;}
+.fs-64{font-size: 64px;}
+.fs-65{font-size: 65px;}
+.fs-66{font-size: 66px;}
+.fs-67{font-size: 67px;}
+.fs-68{font-size: 68px;}
+.fs-69{font-size: 69px;}
+.fs-70{font-size: 70px;}
+.fs-71{font-size: 71px;}
+.fs-72{font-size: 72px;}
+.fs-73{font-size: 73px;}
+.fs-74{font-size: 74px;}
+.fs-75{font-size: 75px;}
+.fs-76{font-size: 76px;}
+.fs-77{font-size: 77px;}
+.fs-78{font-size: 78px;}
+.fs-79{font-size: 79px;}
+.fs-80{font-size: 80px;}
+.fs-81{font-size: 82px;}
+.fs-82{font-size: 82px;}
+.fs-83{font-size: 83px;}
+.fs-84{font-size: 84px;}
+.fs-85{font-size: 85px;}
+.fs-86{font-size: 86px;}
+.fs-87{font-size: 87px;}
+.fs-88{font-size: 88px;}
+.fs-89{font-size: 89px;}
+.fs-90{font-size: 90px;}
+.fs-91{font-size: 91px;}
+.fs-92{font-size: 92px;}
+.fs-93{font-size: 93px;}
+.fs-94{font-size: 94px;}
+.fs-95{font-size: 95px;}
+.fs-96{font-size: 96px;}
+.fs-97{font-size: 97px;}
+.fs-98{font-size: 98px;}
+.fs-99{font-size: 99px;}
+
+/*=====for line height*/
+.lh-5{line-height: 5px;}
+.lh-6{line-height: 6px;}
+.lh-7{line-height: 7px;}
+.lh-8{line-height: 8px;}
+.lh-9{line-height: 9px;}
+.lh-10{line-height: 10px;}
+.lh-11{line-height: 11px;}
+.lh-12{line-height: 12px;}
+.lh-13{line-height: 13px;}
+.lh-14{line-height: 14px;}
+.lh-15{line-height: 15px;}
+.lh-16{line-height: 16px;}
+.lh-17{line-height: 17px;}
+.lh-18{line-height: 18px;}
+.lh-19{line-height: 19px;}
+.lh-20{line-height: 20px;}
+.lh-21{line-height: 21px;}
+.lh-22{line-height: 22px;}
+.lh-23{line-height: 23px;}
+.lh-24{line-height: 24px;}
+.lh-25{line-height: 25px;}
+.lh-26{line-height: 26px;}
+.lh-27{line-height: 27px;}
+.lh-28{line-height: 28px;}
+.lh-29{line-height: 29px;}
+.lh-30{line-height: 30px;}
+.lh-31{line-height: 31px;}
+.lh-32{line-height: 32px;}
+.lh-33{line-height: 33px;}
+.lh-34{line-height: 34px;}
+.lh-35{line-height: 35px;}
+.lh-36{line-height: 36px;}
+.lh-37{line-height: 37px;}
+.lh-38{line-height: 38px;}
+.lh-39{line-height: 39px;}
+.lh-40{line-height: 40px;}
+.lh-41{line-height: 41px;}
+.lh-42{line-height: 42px;}
+.lh-43{line-height: 43px;}
+.lh-44{line-height: 44px;}
+.lh-45{line-height: 45px;}
+.lh-46{line-height: 46px;}
+.lh-47{line-height: 47px;}
+.lh-48{line-height: 48px;}
+.lh-49{line-height: 49px;}
+.lh-50{line-height: 50px;}
+.lh-51{line-height: 51px;}
+.lh-52{line-height: 52px;}
+.lh-53{line-height: 53px;}
+.lh-54{line-height: 54px;}
+.lh-55{line-height: 55px;}
+.lh-56{line-height: 56px;}
+.lh-57{line-height: 57px;}
+.lh-58{line-height: 58px;}
+.lh-59{line-height: 59px;}
+.lh-60{line-height: 60px;}
+.lh-61{line-height: 61px;}
+.lh-62{line-height: 62px;}
+.lh-63{line-height: 63px;}
+.lh-64{line-height: 64px;}
+.lh-65{line-height: 65px;}
+.lh-66{line-height: 66px;}
+.lh-67{line-height: 67px;}
+.lh-68{line-height: 68px;}
+.lh-69{line-height: 69px;}
+.lh-70{line-height: 70px;}
+.lh-71{line-height: 71px;}
+.lh-72{line-height: 72px;}
+/*=====for margin=====*/
+.no-margin{margin:0;}
+.mr-a{margin: 0 auto;}
+/*===margin top=====*/
+
+.mrt-1{margin-top: 1px;}
+.mrt-2{margin-top: 2px;}
+.mrt-3{margin-top: 3px;}
+.mrt-4{margin-top: 4px;}
+.mrt-5{margin-top: 5px;}
+.mrt-6{margin-top: 6px;}
+.mrt-7{margin-top: 7px;}
+.mrt-8{margin-top: 8px;}
+.mrt-9{margin-top: 9px;}
+.mrt-10{margin-top: 10px;}
+.mrt-11{margin-top: 11px;}
+.mrt-12{margin-top: 12px;}
+.mrt-13{margin-top: 13px;}
+.mrt-14{margin-top: 14px;}
+.mrt-15{margin-top: 15px;}
+.mrt-16{margin-top: 16px;}
+.mrt-17{margin-top: 17px;}
+.mrt-18{margin-top: 18px;}
+.mrt-19{margin-top: 19px;}
+.mrt-20{margin-top: 20px;}
+.mrt-21{margin-top: 21px;}
+.mrt-22{margin-top: 22px;}
+.mrt-23{margin-top: 23px;}
+.mrt-24{margin-top: 24px;}
+.mrt-25{margin-top: 25px;}
+.mrt-26{margin-top: 26px;}
+.mrt-27{margin-top: 27px;}
+.mrt-28{margin-top: 28px;}
+.mrt-29{margin-top: 29px;}
+.mrt-30{margin-top: 30px;}
+.mrt-31{margin-top: 31px;}
+.mrt-32{margin-top: 32px;}
+.mrt-33{margin-top: 33px;}
+.mrt-34{margin-top: 34px;}
+.mrt-35{margin-top: 35px;}
+.mrt-36{margin-top: 36px;}
+.mrt-37{margin-top: 37px;}
+.mrt-38{margin-top: 38px;}
+.mrt-39{margin-top: 39px;}
+.mrt-40{margin-top: 40px;}
+.mrt-41{margin-top: 41px;}
+.mrt-42{margin-top: 42px;}
+.mrt-43{margin-top: 43px;}
+.mrt-44{margin-top: 44px;}
+.mrt-45{margin-top: 45px;}
+.mrt-46{margin-top: 46px;}
+.mrt-47{margin-top: 47px;}
+.mrt-48{margin-top: 48px;}
+.mrt-49{margin-top: 49px;}
+.mrt-50{margin-top: 50px;}
+/*====margin right-=====*/
+.mrr-1{margin-right: 1px;}
+.mrr-2{margin-right: 2px;}
+.mrr-3{margin-right: 3px;}
+.mrr-4{margin-right: 4px;}
+.mrr-5{margin-right: 5px;}
+.mrr-6{margin-right: 6px;}
+.mrr-7{margin-right: 7px;}
+.mrr-8{margin-right: 8px;}
+.mrr-9{margin-right: 9px;}
+.mrr-10{margin-right: 10px;}
+.mrr-11{margin-right: 11px;}
+.mrr-12{margin-right: 12px;}
+.mrr-13{margin-right: 13px;}
+.mrr-14{margin-right: 14px;}
+.mrr-15{margin-right: 15px;}
+.mrr-16{margin-right: 16px;}
+.mrr-17{margin-right: 17px;}
+.mrr-18{margin-right: 18px;}
+.mrr-19{margin-right: 19px;}
+.mrr-20{margin-right: 20px;}
+.mrr-21{margin-right: 21px;}
+.mrr-22{margin-right: 22px;}
+.mrr-23{margin-right: 23px;}
+.mrr-24{margin-right: 24px;}
+.mrr-25{margin-right: 25px;}
+.mrr-26{margin-right: 26px;}
+.mrr-27{margin-right: 27px;}
+.mrr-28{margin-right: 28px;}
+.mrr-29{margin-right: 29px;}
+.mrr-30{margin-right: 30px;}
+.mrr-31{margin-right: 31px;}
+.mrr-32{margin-right: 32px;}
+.mrr-33{margin-right: 33px;}
+.mrr-34{margin-right: 34px;}
+.mrr-35{margin-right: 35px;}
+.mrr-36{margin-right: 36px;}
+.mrr-37{margin-right: 37px;}
+.mrr-38{margin-right: 38px;}
+.mrr-39{margin-right: 39px;}
+.mrr-40{margin-right: 40px;}
+.mrr-41{margin-right: 41px;}
+.mrr-42{margin-right: 42px;}
+.mrr-43{margin-right: 43px;}
+.mrr-44{margin-right: 44px;}
+.mrr-45{margin-right: 45px;}
+.mrr-46{margin-right: 46px;}
+.mrr-47{margin-right: 47px;}
+.mrr-48{margin-right: 48px;}
+.mrr-49{margin-right: 49px;}
+.mrr-50{margin-right: 50px;}
+/*====margin bottom=======*/
+.mrb-1{margin-bottom: 1px;}
+.mrb-2{margin-bottom: 2px;}
+.mrb-3{margin-bottom: 3px;}
+.mrb-4{margin-bottom: 4px;}
+.mrb-5{margin-bottom: 5px;}
+.mrb-6{margin-bottom: 6px;}
+.mrb-7{margin-bottom: 7px;}
+.mrb-8{margin-bottom: 8px;}
+.mrb-9{margin-bottom: 9px;}
+.mrb-10{margin-bottom: 10px;}
+.mrb-11{margin-bottom: 11px;}
+.mrb-12{margin-bottom: 12px;}
+.mrb-13{margin-bottom: 13px;}
+.mrb-14{margin-bottom: 14px;}
+.mrb-15{margin-bottom: 15px;}
+.mrb-16{margin-bottom: 16px;}
+.mrb-17{margin-bottom: 17px;}
+.mrb-18{margin-bottom: 18px;}
+.mrb-19{margin-bottom: 19px;}
+.mrb-20{margin-bottom: 20px;}
+.mrb-21{margin-bottom: 21px;}
+.mrb-22{margin-bottom: 22px;}
+.mrb-23{margin-bottom: 23px;}
+.mrb-24{margin-bottom: 24px;}
+.mrb-25{margin-bottom: 25px;}
+.mrb-26{margin-bottom: 26px;}
+.mrb-27{margin-bottom: 27px;}
+.mrb-28{margin-bottom: 28px;}
+.mrb-29{margin-bottom: 29px;}
+.mrb-30{margin-bottom: 30px;}
+.mrb-31{margin-bottom: 31px;}
+.mrb-32{margin-bottom: 32px;}
+.mrb-33{margin-bottom: 33px;}
+.mrb-34{margin-bottom: 34px;}
+.mrb-35{margin-bottom: 35px;}
+.mrb-36{margin-bottom: 36px;}
+.mrb-37{margin-bottom: 37px;}
+.mrb-38{margin-bottom: 38px;}
+.mrb-39{margin-bottom: 39px;}
+.mrb-40{margin-bottom: 40px;}
+.mrb-41{margin-bottom: 41px;}
+.mrb-42{margin-bottom: 42px;}
+.mrb-43{margin-bottom: 43px;}
+.mrb-44{margin-bottom: 44px;}
+.mrb-45{margin-bottom: 45px;}
+.mrb-46{margin-bottom: 46px;}
+.mrb-47{margin-bottom: 47px;}
+.mrb-48{margin-bottom: 48px;}
+.mrb-49{margin-bottom: 49px;}
+.mrb-50{margin-bottom: 50px;}
+/*=====margin left=======*/
+.mrl-1{margin-left: 1px;}
+.mrl-2{margin-left: 2px;}
+.mrl-3{margin-left: 3px;}
+.mrl-4{margin-left: 4px;}
+.mrl-5{margin-left: 5px;}
+.mrl-6{margin-left: 6px;}
+.mrl-7{margin-left: 7px;}
+.mrl-8{margin-left: 8px;}
+.mrl-9{margin-left: 9px;}
+.mrl-10{margin-left: 10px;}
+.mrl-11{margin-left: 11px;}
+.mrl-12{margin-left: 12px;}
+.mrl-13{margin-left: 13px;}
+.mrl-14{margin-left: 14px;}
+.mrl-15{margin-left: 15px;}
+.mrl-16{margin-left: 16px;}
+.mrl-17{margin-left: 17px;}
+.mrl-18{margin-left: 18px;}
+.mrl-19{margin-left: 19px;}
+.mrl-20{margin-left: 20px;}
+.mrl-21{margin-left: 21px;}
+.mrl-22{margin-left: 22px;}
+.mrl-23{margin-left: 23px;}
+.mrl-24{margin-left: 24px;}
+.mrl-25{margin-left: 25px;}
+.mrl-26{margin-left: 26px;}
+.mrl-27{margin-left: 27px;}
+.mrl-28{margin-left: 28px;}
+.mrl-29{margin-left: 29px;}
+.mrl-30{margin-left: 30px;}
+.mrl-31{margin-left: 31px;}
+.mrl-32{margin-left: 32px;}
+.mrl-33{margin-left: 33px;}
+.mrl-34{margin-left: 34px;}
+.mrl-35{margin-left: 35px;}
+.mrl-36{margin-left: 36px;}
+.mrl-37{margin-left: 37px;}
+.mrl-38{margin-left: 38px;}
+.mrl-39{margin-left: 39px;}
+.mrl-40{margin-left: 40px;}
+.mrl-41{margin-left: 41px;}
+.mrl-42{margin-left: 42px;}
+.mrl-43{margin-left: 43px;}
+.mrl-44{margin-left: 44px;}
+.mrl-45{margin-left: 45px;}
+.mrl-46{margin-left: 46px;}
+.mrl-47{margin-left: 47px;}
+.mrl-48{margin-left: 48px;}
+.mrl-49{margin-left: 49px;}
+.mrl-50{margin-left: 50px;}
