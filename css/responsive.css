@@ -1,16 +1,20 @@
-/*for responsive layout*/
-@media (min-width: 1200px){
-
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-
-}
-@media (min-width: 768px) and (max-width: 991px) {
-
-}
-@media (min-width: 576px) and (max-width: 767px) {
-
-}
+/*==mobile-device==*/
 @media (max-width: 575px) {
-
+  
+}
+/*==tablet-device==*/
+@media (min-width: 576px) and (max-width: 767px) {
+  
+}
+/*==notebook-device==*/
+@media (min-width: 768px) and (max-width: 991px) {
+  
+}
+/*==laptop-device==*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+}
+/*==desktop-device==*/
+@media (min-width: 1200px){
+  
 }

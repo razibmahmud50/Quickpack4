@@ -1,0 +1,13 @@
+/*for gradient image and background */
+#home {
+    background: linear-gradient(45deg,rgba(75,53,76,0.8) 35%,rgba(220,77,79,0.8) 100%), url(img/home-bg.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+/*======for text gradient======*/
+.benefit .header-back h2{
+  background: linear-gradient(45deg,rgba(165,56,72,0.9) 35%,rgba(72,0,72,0.9) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

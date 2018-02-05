@@ -1,6 +1,6 @@
 ======html5 quickstart pack template========
 1:bootstrap 4 
-2:font-awesome 4.7
+2:font-awesome 5
 3:OwlCarousel2-2.2.1
 4:wow js
 5:jquery-ui v1.12.1
@@ -12,4 +12,4 @@
 11:plugin css for plugin customize css
 12:main js for custom js
 13:jquery-3.2.1
-======updated 25/1/2018==========
+======updated 3/2/2018==========
