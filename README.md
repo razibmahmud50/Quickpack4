@@ -1,4 +1,4 @@
-<h3>======html5 quickstart pack template========</h3
+<h3>======html5 quickstart pack template========</h3>
 <p><strong>1:bootstrap 4</strong></p>
 <p><strong>2:font-awesome 5</p>
 <p>3:OwlCarousel2-2.2.1</p>
