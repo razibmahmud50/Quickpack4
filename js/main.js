@@ -1,9 +1,8 @@
-/*custom js here*/
 (function ($) {
 	"use strict";
 
 
+    // jQuery methods go here...
 
-
-
+	
 }(jQuery));
