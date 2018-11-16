@@ -1,0 +1,15 @@
+.btn-style-one{
+    background: $red;
+    border: 1px solid $red;
+    color:$red;
+    text-transform: capitalize;
+    &:hover, &:active, &.active{
+      background: $pink;
+    }
+  }
+  
+  .btn-size-one{
+    font-size: 14px;
+    line-height:1.5;
+    padding: 5px auto;
+  }

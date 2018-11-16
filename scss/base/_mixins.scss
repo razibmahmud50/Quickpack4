@@ -1,0 +1,84 @@
+// @include screen(1140) { width:80%; }
+
+@mixin media($max-width) {
+  @media only screen and (max-width: $max-width + px) { @content; }
+}
+
+//@include position(absolute, 39%, 9px, null, null);
+
+@mixin position($position, $top, $right, $bottom: "null", $left:"null"){
+    position: $position;
+    top: $top;
+    right:$right;
+    bottom:$bottom;
+    left:$left; 
+  }
+
+//@include display(flex, center, flex-end);
+
+@mixin display($display, $justify-content, $align-item: "null"){
+  display: $display;
+  justify-content: $justify-content;
+  align-items:$align-item;
+}
+
+//@include size(30px, 40px);
+
+@mixin size($width, $height){
+  width: $width;
+  height: $height;
+}
+
+// ellipsis 
+@mixin ellipsis(){
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// @include arrow("left", #cccccc, 10);
+
+@mixin arrow($direction, $color, $size) {
+  $pxSize: $size + px;
+  $remSize: ($size / 10) + rem;
+
+  width: 0;
+  height: 0;
+  content: "";
+
+  @if $direction == "left"{
+    
+    border-top: $remSize solid transparent;
+    border-right: $remSize solid $color;
+    border-bottom: $remSize solid transparent;
+    border-top: $pxSize solid transparent;
+    border-right: $pxSize solid $color;
+    border-bottom: $pxSize solid transparent;
+  }@else if $direction == "right"{
+
+    border-top: $remSize solid transparent;
+    border-bottom: $remSize solid transparent;
+    border-left: $remSize solid $color;
+    border-top: $pxSize solid transparent;
+    border-bottom: $pxSize solid transparent;
+    border-left: $pxSize solid $color;
+  }@else if $direction == "up"{
+
+    border-left: $remSize solid transparent;
+    border-right: $remSize solid transparent;
+    border-bottom: $remSize solid $color;
+    border-left: $pxSize solid transparent;
+    border-right: $pxSize solid transparent;
+    border-bottom: $pxSize solid $color;
+  }@else if $direction == "down"{
+
+    border-left: $remSize solid transparent;
+    border-right: $remSize solid transparent;
+    border-top: $remSize solid $color;
+    border-left: $pxSize solid transparent;
+    border-right: $pxSize solid transparent;
+    border-top: $pxSize solid $color;
+  }
+
+}
+
