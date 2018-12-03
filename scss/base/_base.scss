@@ -1,0 +1,33 @@
+// Theme Name:
+// Theme URI:
+// Author:
+// Author URI: https://
+// Version: 1.0
+// Tags: responsive,clean,bootstrap,creative
+// Description: Responsive bootstrap4 template
+
+//Global Style
+body{
+	font-family: $body-font;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: $header-font;
+}
+p{
+	font-size: 16px;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+img{
+	max-width: 100%;
+}
+ul{
+   list-style: none;
+}
+:focus{
+	box-shadow: none!important;
+}
