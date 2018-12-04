@@ -1,7 +1,13 @@
-// @include screen(1140) { width:80%; }
+// @include media-max(1140) { width:80%; }
 
-@mixin media($max-width) {
+@mixin media-max($max-width) {
   @media only screen and (max-width: $max-width + px) { @content; }
+}
+
+// @include media-min(360) { width:80%; }
+
+@mixin media-min($min-width) {
+  @media only screen and (min-width: $min-width + px) { @content; }
 }
 
 //@include position(absolute, 39%, 9px, null, null);

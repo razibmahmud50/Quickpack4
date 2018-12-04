@@ -31,3 +31,23 @@ ul{
 :focus{
 	box-shadow: none!important;
 }
+.bg-none {
+       background: unset;
+}
+
+.bg-transparent {
+       background: transparent;
+}
+
+:disabled,
+.disabled {
+       cursor: not-allowed;
+}
+
+.hidden {
+       visibility: hidden;
+}
+
+.cursor-pointer {
+       cursor: pointer;
+}
