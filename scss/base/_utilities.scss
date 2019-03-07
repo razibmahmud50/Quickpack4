@@ -1,46 +1,15 @@
-//scrollbar custom design 
-::-webkit-scrollbar {
- width: 10px;
+.disabled {
+       cursor: not-allowed;
 }
-::-webkit-scrollbar-track {
- box-shadow: inset 0 0 5px $scrollbar-track-shadow;
- border-radius: 10px;
+.bg-none {
+       background: unset;
 }
-
-::-webkit-scrollbar-thumb {
- background: $scrollbar-handle;
- border-radius: 10px;
+.bg-transparent {
+       background: transparent;
 }
-
-::-webkit-scrollbar-thumb:hover {
- background: $scrollbar-handle-hover;
+.hidden {
+       visibility: hidden;
 }
-
-//Custom Slect Dropdown Arrow
-.select-toggle {
- position: relative;
- display: inline-block;
- background: white;
- border: 1px solid red;
- cursor: pointer;
-
- &::after {
-  position: absolute;
-  top: 40%;
-  right: 5px;
-  width: 0;
-  height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 6px solid #023F55;
-  content: "";
-  pointer-events: none;
-}
-
-select {
-  appearance: none;
-  -webkit-appearance: none;
-  background: transparent;
-  padding-right: 20px;
-}
+.cursor-pointer {
+       cursor: pointer;
 }

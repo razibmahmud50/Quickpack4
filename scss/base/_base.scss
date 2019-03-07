@@ -27,27 +27,13 @@ img{
 }
 ul{
    list-style: none;
+   padding-left: 0;
+   margin-bottom: 0;
 }
 :focus{
 	box-shadow: none!important;
 }
-.bg-none {
-       background: unset;
-}
-
-.bg-transparent {
-       background: transparent;
-}
-
-:disabled,
-.disabled {
+:disabled {
        cursor: not-allowed;
 }
 
-.hidden {
-       visibility: hidden;
-}
-
-.cursor-pointer {
-       cursor: pointer;
-}
