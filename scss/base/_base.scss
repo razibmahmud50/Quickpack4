@@ -7,6 +7,9 @@
 // Description: Responsive bootstrap4 template
 
 //Global Style
+html{
+	scroll-behavior: smooth;
+}
 body{
 	font-family: $body-font;
 }
@@ -28,7 +31,6 @@ img{
 ul{
    list-style: none;
    padding-left: 0;
-   margin-bottom: 0;
 }
 :focus{
 	box-shadow: none!important;
