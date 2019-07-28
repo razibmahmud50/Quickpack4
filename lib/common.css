@@ -1,0 +1,22 @@
+.container {
+	width: 100%;
+	max-width: 1200px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row{
+	display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+.col{
+	position: relative;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+}
