@@ -1,0 +1,17 @@
+  /*iphone 6/7/8 support*/
+  @media only screen
+  and (min-device-width : 375px)
+  and (max-device-width : 667px) 
+  and (device-aspect-ratio : 375/667)
+  and (-webkit-min-device-pixel-ratio : 2) {
+  	
+  }
+
+  /*iphone x support*/
+  @media only screen
+  and (min-device-width : 375px)
+  and (max-device-width : 812px)
+  and (-webkit-device-pixel-ratio : 3) {
+
+  }
+
