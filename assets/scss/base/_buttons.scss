@@ -1,15 +1,52 @@
-// .btn-style-one{
-//     background: $red;
-//     border: 1px solid $red;
-//     color:$red;
-//     text-transform: capitalize;
-//     &:hover, &:active, &.active{
-//       background: $pink;
-//     }
-//   }
+//buttons
+
+.btn-primary{
+	color:$color-primary;
+    background: $color-primary;
+    border: 1px solid $color-primary;
+    &:hover, &:active, &:active, &.active{
+      opacity: 0.8;
+    }
+  }
+  .btn-secondary{
+	color:$color-secondary;
+    background: $color-secondary;
+    border: 1px solid $color-secondary;
+    &:hover, &:active, &:active, &.active{
+      opacity: 0.8;
+    }
+  }
+  .btn-success{
+	color:$color-success;
+    background: $color-success;
+    border: 1px solid $color-success;
+    &:hover, &:active, &:active, &.active{
+      opacity: 0.8;
+    }
+  }
+  .btn-danger{
+	color:$color-danger;
+    background: $color-danger;
+    border: 1px solid $color-danger;
+    &:hover, &:active, &:active, &.active{
+      opacity: 0.8;
+    }
+  }
+  .btn-warning{
+	color:$color-warning;
+    background: $color-warning;
+    border: 1px solid $color-warning;
+    &:hover, &:active, &:active, &.active{
+      opacity: 0.8;
+    }
+  }
+  .btn-info{
+	color:$color-info;
+    background: $color-info;
+    border: 1px solid $color-info;
+    &:hover, &:active, &:active, &.active{
+      opacity: 0.8;
+    }
+  }
   
-//   .btn-size-one{
-//     font-size: 14px;
-//     line-height:1.5;
-//     padding: 5px auto;
-//   }
+  

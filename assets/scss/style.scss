@@ -1,8 +1,11 @@
-//base style
+//base 
 @import 'base/variables';
 @import 'base/mixins';
 @import 'base/base';
 @import 'base/utilities';
 @import 'base/buttons';
 
-//app style
+//layout
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/sidebar';
