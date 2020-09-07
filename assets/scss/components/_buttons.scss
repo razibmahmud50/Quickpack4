@@ -4,7 +4,7 @@
 	color:$color-primary;
     background: $color-primary;
     border: 1px solid $color-primary;
-    &:hover, &:active, &:active, &.active{
+    &:hover, &:active, &:active{
       opacity: 0.8;
     }
   }
@@ -12,7 +12,7 @@
 	color:$color-secondary;
     background: $color-secondary;
     border: 1px solid $color-secondary;
-    &:hover, &:active, &:active, &.active{
+    &:hover, &:active, &:active{
       opacity: 0.8;
     }
   }
@@ -20,7 +20,7 @@
 	color:$color-success;
     background: $color-success;
     border: 1px solid $color-success;
-    &:hover, &:active, &:active, &.active{
+    &:hover, &:active, &:active{
       opacity: 0.8;
     }
   }
@@ -28,7 +28,7 @@
 	color:$color-danger;
     background: $color-danger;
     border: 1px solid $color-danger;
-    &:hover, &:active, &:active, &.active{
+    &:hover, &:active, &:active{
       opacity: 0.8;
     }
   }
@@ -44,7 +44,7 @@
 	color:$color-info;
     background: $color-info;
     border: 1px solid $color-info;
-    &:hover, &:active, &:active, &.active{
+    &:hover, &:active, &:active{
       opacity: 0.8;
     }
   }
